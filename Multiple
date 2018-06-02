@@ -1,0 +1,65 @@
+package mystry1;
+
+public class Multiple {
+	public boolean ismultiple(int one,int second)
+	{
+		if(second%one==0)
+		return true;
+		 else
+	    return false;
+	}
+		
+		 
+			public boolean iseven(int two)
+			{
+		if(two%2==0)
+			return true; 
+		else
+			return false;
+			}
+			
+			public double celsius(double fahrenheit)
+			{
+				double celsius = 5.0 / 9.0 * ( fahrenheit - 32 );  
+				return celsius;
+				
+			}
+			public double fehrenheit(double celsius)
+			{
+				double fehrenheit = 9.0 / 5.0 * (celsius + 32);
+				return fehrenheit;
+			}
+			public void isperfect(int n)
+			{
+				int sum=0;
+				for(int i=1;i<=n/2;i++)
+		        {
+					if(n%i==0)	
+					{
+						sum=sum+i;
+						
+					}
+					
+		        }
+				if(sum==n)
+					System.out.println("is a perfectnumber");
+				else
+					System.out.println("is not a perfectnumber");
+			}
+			public static void main(String[] args) {
+				Multiple m1=new Multiple();
+				m1.ismultiple(3,6);
+				m1.iseven(3);
+				m1.celsius(19);
+				m1.fehrenheit(15);
+				m1.isperfect(60);
+				System.out.println(m1.ismultiple(3,6));
+			    System.out.println(m1.iseven(3));
+			    System.out.println(m1.celsius(19));
+			    System.out.println(m1.fehrenheit(15));
+		}
+		
+}
+
+
+
