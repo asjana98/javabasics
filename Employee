@@ -1,0 +1,41 @@
+package mystry1;
+
+public class Employee {
+	double salary;
+	String FirstName;
+	String LastName;
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		if(salary>0)
+		this.salary = salary;
+	}
+	public String getFirstName() {
+		return FirstName;
+	}
+	public void setFirstName(String firstName) {
+		this.FirstName = firstName;
+	}
+	public String getLastName() {
+		return LastName;
+	}
+	public void setLastName(String lastName) {
+		this.LastName = lastName;
+	}
+	public void calculation() {
+		salary=(salary*1.1)*12;
+	    System.out.println(salary);
+	}
+   public static void main(String[] args) {
+   Employee e1=new Employee();
+   Employee e2=new Employee();
+   e1.setSalary(150);
+   e2.setSalary(200);
+   System.out.println(e1.getSalary());
+   System.out.println(e2.getSalary()); 
+   e1.calculation();
+   e2.calculation();
+   }
+}
+   
